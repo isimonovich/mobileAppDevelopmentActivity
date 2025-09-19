@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod 4 Activity - Eragon cont.</title>
+
+    <!--jQuery and jQuery moobile-->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!--Background color to make home page a little more appealing-->
+    <style>
+    #home.ui-page,
+    #home .ui-panel-wrapper {
+        background-color: #9ab973;
+    }
+
+    #home .ui-content {
+        background: transparent;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!--Widget styling-->
+    <style>
+    #backToTop {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 9999;
+    }
+    </style>
+
+</head>
+<body>
+
+    <!--Container-->
+    <div data-role="page" id="home">
+
+        <!--Create header-->
+        <div data-role="header">
+            <h1>Eragon cont.</h1>
+            <!--Descriptive paragraph-->
+            <p>One of my favorite books, series, and author of all time. Take your time exploring the world of the Inheritance series!</p>
+        </div>
+
+        <!--List of links-->
+        <div role="main" class="ui-content">
+            <ul data-role="listview">
+                <li><a href="https://en.wikipedia.org/wiki/The_Inheritance_Cycle">Eragon Wiki</a></li>
+                <li><a href="https://inheritance.fandom.com/wiki/Eragon">Eragon Fandom</a></li>
+                <li><a href="https://www.goodreads.com/book/show/113436.Eragon">Book Reviews</a></li>
+                <li><a href="#Praise">Praise for Eragon</a></li>
+                <li><a href="#Series">Inheritance Series</a></li>
+                <li><a href="#Author">About</a></li>
+            </ul>
+
+            <!--Form-->
+            <form id="home-form" action="#" method="post" data-ajax="false">
+                <div class="ui-field-contain">
+                    <label for="firstLastName">Name</label>
+                    <input type="text" name="name" id="firstLastName" placeholder="Your name" required>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="yourEmail">Email</label>
+                    <input type="email" name="email" id="yourEmail" placeholder="you@example.com" required>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="yourPhone">Phone</label>
+                    <input type="tel" name="phone" id="yourPhone" placeholder="(xxx) xxx-xxxx">
+                </div>
+
+                <input type="submit" value="Submit" class="ui-btn ui-btn-b">
+            </form>
+
+        </div>
+    </div>
+
+    <!--First Page-->
+<div data-role="page" id="Praise" data-add-back-btn="true">
+    <div data-role="header">
+        <h1>Praise for Eragon</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <p>Eragon is a New York Times bestselling book. With thousands of fans, reviews, and even a movie, that, like usual, isn't nearly as good as the book, this book is known around the world as one of the best fantasy novels ever written.</p>
+
+        <img src="https://images.thenile.io/r1000/9780552552097.jpg" alt="Book Cover" style="max-width:20%; height:auto;" />
+
+        <!--List-->
+        <ul data-role="listview" data-inset="true">
+        <li>"An authentic work of great talent" - The New York Times Book Review</li>
+        <li>"A breathtaking and unheard-of success" - USA Today</li>
+        <li>"The new "It" book of children's lit" - U.S. News and World Report</li>
+        </ul>
+
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow">Home</a>
+  </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Author: Christopher Paolini</h4>
+    </div>
+  </div>
+
+  <!--Second page-->
+<div data-role="page" id="Series" data-add-back-btn="true">
+  <div data-role="header">
+    <h1>Additional books in the Eragon series</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+
+    <!-- Ordered list-->
+    <ol data-role="listview" data-inset="true">
+        <li>Eragon</li>
+        <li>Eldest</li>
+        <li>Brisingr</li>
+        <li>Inheritance</li>
+    </ol>
+
+    <!--Filtered list, to keep simple I only included four search words and did not give it a highlight or "find" effect-->
+    <ul
+        data-role="listview"
+        data-inset="true"
+        data-filter="true"
+        data-filter-reveal="true"
+        data-filter-placeholder="Search the world of Eragon...">
+        <li><a href="#Praise">saphira</a></li>
+        <li><a href="#Series">dragon</a></li>
+        <li><a href="#Series">galbatorix</a></li>
+        <li><a href="#Author">alagaesia</a></li>
+    </ul>
+
+   <!--No longer collapsible so that widget is easily seen-->
+<div class="book-sections">
+  <div class="ui-body ui-body-a ui-corner-all book-section">
+    <h3>Book Two: Eldest</h3>
+    <p>Darkness falls.... Swords clash.... Evil reigns.
+
+Eragon and his dragon, Saphira, have just saved the rebel state from destruction by the mighty forces of King Galbatorix, cruel ruler of the Empire. Now Eragon must travel to Ellesméra, land of the elves, for further training in magic and swordsmanship, the vital skills of the Dragon Rider. It is the journey of a lifetime, filled with awe inspiring new places and people, each day a fresh adventure. But chaos and betrayal plague him at every turn, and Eragon isn't sure whom he can trust.
+
+Meanwhile, his cousin Roran must fight a new battle home in Carvahall—one that puts Eragon in even graver danger.
+
+Will the king's dark hand strangle all resistance? Eragon may not escape with even his life....</p>
+    <img src="https://m.media-amazon.com/images/I/91UnOoceqcL._AC_UF1000,1000_QL80_.jpg" alt="Eldest" style="max-width:40%; height:auto;" />
+  </div>
+
+  <div class="ui-body ui-body-a ui-corner-all book-section">
+    <h3>Book Three: Brisingr</h3>
+    <p>Oaths sworn... loyalties tested... forces collide.
+
+It's been only months since Eragon first uttered "brisingr", an ancient language term for fire. Since then, he's not only learned to create magic with words — he's been challenged to his very core. Following the colossal battle against the Empires warriors on the Burning Plains, Eragon and his dragon, Saphira, have narrowly escaped with their lives. Still, there is more adventure at hand for the Rider and his dragon, as Eragon finds himself bound by a tangle of promises he may not be able to keep.
+
+First is Eragon's oath to his cousin, Roran: to help rescue Roran's beloved from King Galbatorix's clutches. But Eragon owes his loyalty to others, too. The Varden are in desperate need of his talents and strength — as are the elves and dwarves. When unrest claims the rebels and danger strikes from every corner, Eragon must make choices — choices that will take him across the Empire and beyond, choices that may lead to unimagined sacrifice.
+
+Eragon is the greatest hope to rid the land of tyranny. Can this once simple farm boy unite the rebel forces and defeat the king?</p>
+    <img src="https://m.media-amazon.com/images/I/91dph2pOQUL.jpg" alt="Brisingr" style="max-width:30%; height:auto;" />
+  </div>
+
+  <div class="ui-body ui-body-a ui-corner-all book-section">
+    <h3>Book Four: Inheritance</h3>
+    <p>It began with Eragon... It ends with Inheritance.
+
+Not so very long ago, Eragon — Shadeslayer, Dragon Rider — was nothing more than a poor farm boy, and his dragon, Saphira, only a blue stone in the forest. Now the fate of an entire civilization rests on their shoulders.
+
+Long months of training and battle have brought victories and hope, but they have also brought heartbreaking loss. And still, the real battle lies ahead: they must confront Galbatorix. When they do, they will have to be strong enough to defeat him. And if they cannot, no one can. There will be no second chance.
+
+The Rider and his dragon have come further than anyone dared to hope. But can they topple the evil king and restore justice to Alagaësia? And if so, at what cost?
+
+This is the spellbinding conclusion to Christopher Paolini's worldwide bestselling Inheritance cycle.</p>
+    <img src="https://th.bing.com/th/id/R.7a8df523790e28898600ce7898a4bc20?rik=PWyKp22r50iwGg&riu=http%3a%2f%2fvignette3.wikia.nocookie.net%2finheritance%2fimages%2f3%2f31%2fInheritancecover.jpg%2frevision%2flatest%3fcb%3d20110628211531&ehk=cX%2bqKRGYulKMnASJiELQ50E5tXc3X1RxcrSMGNw8%2bhs%3d&risl=&pid=ImgRaw&r=0" alt="Inheritance" style="max-width:60%; height:auto;" />
+  </div>
+</div>
+
+<!--Back to top widget-->
+<a href="#" id="seriesTopBtn"
+   class="ui-btn ui-btn-b ui-mini ui-corner-all ui-shadow ui-icon-carat-u ui-btn-icon-notext"
+   aria-label="Back to top"
+   style="position:fixed; right:1rem; bottom:1rem; z-index:9999;">Top</a>
+
+
+    <a href="#home" class="ui-btn ui-corner-all ui-shadow">Home</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>There are two additional books separate from the original Inheritance cycle as well!</h4>
+  </div>
+</div>
+
+<!--Third page-->
+<div data-role="page" id="Author" data-add-back-btn="true">
+  <div data-role="header">
+    <h1>Meet the author, Christopher Paolini!</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <p>Christopher Paolini was born in Southern California and has lived most of his life in Paradise Valley, Montana. He published his first novel, Eragon, in 2003 at the age of nineteen, and quickly became a publishing phenomenon. His Inheritance Cycle—Eragon and its three sequels—have sold nearly 40 million copies worldwide. To Sleep in a Sea of Stars was his first adult novel. </p>
+
+    <img src="https://th.bing.com/th/id/R.88c001fa7ab59402c15060a0349be9f3?rik=elEu5Rshqvvj4A&pid=ImgRaw&r=0" alt="Christopher Paolini" style="max-width:100%; height:auto;" />
+
+    <h3>More books to check out.</h3>
+    <ul data-role="listview" data-inset="true">
+        <!--Unordered list-->
+      <li>To Sleep in a Sea of Stars</li>
+      <li>Murtagh - Continuation of the Eragon world</li>
+      <li>The Fork, the Witch, and the Worm - Another member of the Eragon world</li>
+    </ul>
+
+    <a href="#home" class="ui-btn ui-corner-all ui-shadow">Home</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Great reads!</h4>
+  </div>
+</div>
+
+<!--Back to top script-->
+<script>
+  // Smooth scroll to top
+  $(document).on('vclick', '#seriesTopBtn', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Show the button only on the Series page
+  $(document).on('pagecontainershow', function () {
+    var onSeries = $('.ui-page-active').attr('id') === 'Series';
+    $('#seriesTopBtn').toggle(onSeries);
+  });
+</script>
+
+</body>
+</html>
